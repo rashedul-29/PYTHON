@@ -1,20 +1,18 @@
-#Here I am going to practise basic arithmetic operators 
+#For reading an integer from the input given.
 
-#For taking the input integers
 
 if __name__ == '__main__':
-    a = int(input())
-    b = int(input())
+    n = int(input().strip())
     
-#Giving some restraints on the inputs
+#I am checking if the integer is odd or not in "if" condition. "Else" is for the opposite.
 
-    
-    if 1 <= a <= 10**10 and 1 <= b <= 10**10:
-        sum = a + b
-        difference = a - b
-        multiplication = a*b
-        print(sum)
-        print(difference)
-        print(multiplication)
-    else:
-        print("Constraints are not fulfilled")
+    if n % 2 == 1:
+        print("Weird")
+
+    else: 
+        if 2 <= n <= 5:
+            print("Not Weird")
+        elif 6 <= n <= 20:
+            print("Weird")
+        elif n > 20:
+            print("Not Weird")
