@@ -1,4 +1,5 @@
-#For reading an integer from the input given
+#For reading an integer from the input given.
+
 if __name__ == '__main__':
     n = int(input().strip())
     
